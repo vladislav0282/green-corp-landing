@@ -28,36 +28,63 @@
             <img class="about__image" src="img/solar-panel.png">            
         </div>  
     </section>
-    <form>
-        <p>
-            <input type="text" placeholder="Введите логин">
-        </p>
-        <p>
-            <input type="email" placeholder="Введите Ваш адрес эл.почты">
-        </p>
-        <p>
-            <input type="password" placeholder="Введите пароль">
-        </p>
-        <p>
-            <input type="number" placeholder="Введите число">
-        </p>
-        <p>
-            <input type="tel" placeholder="Введите Ваш номер телефона">
-        </p>
-        <p>
-            <textarea rows="10" placeholder="Введите коментарий"></textarea>
-        </p>
-    </form>
-    <form>
-        <div><input type="text">fghjkl</div>
-        <div></div>
-        <div></div>
-        <div>
-            <p><input type="text">sdfg</p>
-            <p><input type="text">hjkl;</p>
-            <p><input type="text">giugiu</p>
-        </div>
-    </form>
+    <section class="form">
+            <div class="form__container">
+                <h1>Оставьте свои контакты</h1>
+                <p>Поможем подобрать модель.
+                    <br>
+                     Выбрать удобный вариант доставки и установки.
+                    <br> 
+                    Гарантия возврата денег.
+                </p>
+                <form class="form__group">
+                        <label for="name">Ваше имя</label>
+                        <input type="text" placeholder="Введите имя" id="name">
+                        <label for="email">Электроннй адрес</label>
+                        <input type="email" placeholder="***@yandex.ru" id="email">
+                        <label for="phone">Номер телефона</label>
+                        <input type="tel" placeholder="7(999) 999-99-99" id="phone">
+                        <label for="budget">Примерный бюджет</label>
+                        <select id="budget">
+                            <option>Выберите вариант</option>
+                            <option value="10-30">10 000₽ – 30 000₽</option>
+                            <option value="30-60">30 000₽ – 60 000₽</option>
+                            <option value="60-100">60 000₽ – 100 000₽</option>
+                            <option value="100+">100 000₽</option>        
+                        </select>
+                        <button class="form__submit" type="submit">Отправить заявку
+                        </button>
+                </form>
+            </div>
+    </section>
 </body>
+<footer>
+    <div class="footer__container">
+        <div class="footer__group">
+            <h3>Позвонить нам:</h3>
+            <div class="footer__links">
+              <a href="tel:74959999999">+7 (495) 999-99-99</a>
+            </div>
+        </div>
+        <div class="footer__group">
+            <h3>Решение для дома:</h3>
+            <div class="footer__links">
+              <a href="#">Солнечные панели GreenRobotic</a>
+              <a href="#">Системы солнечных панелей GreenStation</a>
+            </div>
+        </div>
+        <div class="footer__group">
+            <h3>Компания</h3>
+            <div class="footer__links">
+              <a href="#">Контакты</a>
+              <a href="#">Вакансии</a>
+              <a href="#">СМИ</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer__copyright">GreenCorp © 2021</div>
+</footer>
 </html>
+
+
 
