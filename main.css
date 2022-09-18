@@ -88,15 +88,15 @@ button {
 }
 
 .form {
-    display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     background-color: #1D263A;
     color: #fff;
     padding-top: 115px;
     padding-bottom: 115px;
     text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .form h1 {
@@ -123,16 +123,17 @@ button {
 .form label {
     font-size: 18px;
     font-weight: 600;
-    /* margin-bottom: 15px; */
+    margin-bottom: 20px;
 }
 
-.form input {
+.form input, .form select {
+    border: none;
+    border-radius: 15px;
+    padding: 0 20px;
+    outline: none; /*убирает border при вводе текста*/
     font-size: 18px;
     color: #213053;
     height: 60px;
-    padding: 0 20px 0 20px;
-    border-radius: 15px;
-    border: none;
 }
 
 .form select {
@@ -154,20 +155,14 @@ select {
     appearance: none; /*убрать стрелочку справа*/
 }
 
-input {
-    outline: none; /*убирает border при вводе текста*/
-}
-
 button:hover {
     background-color: #f6980c;
-    box-shadow: 0 16px 36px rgba(246 152 12 / 20%)
+    box-shadow: 0 16px 36px rgba(246 152 12 / 20%);
+    transition:  background-color 0.3s ease-in;
 }
 
 .footer {
-    padding-top: 90px;
-    padding-bottom: 90px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 90px 20px;
     font-size: 16px;
     font-weight: 600;
 }
@@ -187,7 +182,7 @@ button:hover {
     margin-right: 80px;
 }
 
-h3 {
+footer h3 {
     font-size: 16px;
     opacity: 0.7;
     margin-bottom: 30px;
@@ -200,8 +195,6 @@ h3 {
 
 .footer__links a {
     margin-bottom: 15px;
-    font-size: 16px;
-    font-weight: 600;
 }
 
 
