@@ -9,6 +9,10 @@ header {
     justify-content: space-between;
     align-items: center;
     padding:20px;
+    position: sticky;
+    top:0;
+    background-color: #fff;
+    z-index:1;
 }
 
 .header__logo {
@@ -18,7 +22,7 @@ header {
 a {
     text-decoration: none;
     color: #213053;
-    
+   
 }
 
 header a {
@@ -79,9 +83,15 @@ button {
 
 .about__sun-image {
     width: 100px;
-    height: 100px;
-    
+    height: 100px;    
+    position: absolute;
+    animation: rotation 10s infinite linear;/*анимация: rotation(имя) 10s(продолжительность) infinite(переодичность бесконечно) linear(линейно) */
 }
+
+/*.about__sun-image:hover {
+    animation: rotation 10s infinite linear; вращается при наведении
+}*/
+
 
 .form__container {
     width: 550px;
@@ -197,4 +207,7 @@ footer h3 {
     margin-bottom: 15px;
 }
 
-
+@keyframes rotation {
+    0%{transform: rotate(0);}
+    100%{transform: rotate(360deg);}
+}
